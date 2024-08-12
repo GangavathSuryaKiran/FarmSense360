@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Price forecaster</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+    body {
+      /* background-image: url('/static/lbop.jpeg'); */
+      background-color: white;
+      font-family: serif;
+    }
+
+    div.main {
+      padding: 5px 50px 75px 50px;
+    }
+
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 115px;
+      background-color: #0A1E29;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+
+    .header .logo {
+      width: 40px;
+      height: 40px;
+    }
+
+    .header h1 {
+      margin-right: 80%;
+      font-size: 35px;
+    }
+
+    .row {
+      margin-top: 9%;
+    }
+
+    span,
+    img {
+      vertical-align: middle;
+    }
+
+    .brand-logo>span,
+    .brand-logo>img {
+      vertical-align: middle;
+    }
+
+    .commodity-card {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      text-align: center;
+      background-color: rgb(99, 121, 139);
+      border-radius: 5px;
+      letter-spacing: 2px;
+    }
+
+    .commodity-image {
+      width: 48px;
+      height: 48px;
+    }
+
+    #h41 {
+      color: darkgreen;
+      text-shadow: 2px 2px 5px rgb(249, 255, 162);
+      font-weight: bold;
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body class="main">
+  <div class="header">
+    <div class="logo"><span id="sp1"> <img src="/static/l1.png" alt="Logo" width="65" height="62"></span></div>
+    <h1>Price Forecaster</h1>
+  </div>
+
+  <script>
+    function sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    function updateTime(i) {
+      $('#time').load('http://localhost:8080/ticker/' + 0 + '/' + i);
+    }
+
+    function updateCrop1(i) {
+      $('#crop1').load('http://localhost:8080/ticker/' + 1 + '/' + i);
+    }
+
+    function updatePrice1(i) {
+      $('#price1').load('http://localhost:8080/ticker/' + 2 + '/' + i);
+    }
+
+    function updateChange1(i) {
+      $("#change1").attr("src", "../static/gain-icon.png");
+      $('#pos-change').load('http://localhost:8080/ticker/' + 3 + '/' + i);
+    }
+
+    function updateCrop2(i) {
+      $('#crop2').load('http://localhost:8080/ticker/' + 4 + '/' + i);
+    }
+
+    function updatePrice2(i) {
+      $('#price2').load('http://localhost:8080/ticker/' + 5 + '/' + i);
+    }
+
+    function updateChange2(i) {
+      $("#change2").attr("src", "../static/loss-icon.png");
+      $('#neg-change').load('http://localhost:8080/ticker/' + 6 + '/' + i);
+    }
+  </script>
+
+  <script>
+    var i = 0
+    setInterval(async function () {
+      i = (i + 1) % 5;
+      updateTime(i);
+      updateCrop1(i);
+      await sleep(200);
+      updatePrice1(i);
+      await sleep(200);
+      updateChange1(i);
+      await sleep(200);
+      updateCrop2(i);
+      await sleep(200);
+      updatePrice2(i);
+      await sleep(200);
+      updateChange2(i);
+      await sleep(200);
+    }, 4000);
+  </script>
+
+  <div class="row">
+    <h4 id="h41">Explore by commodity</h4>
+    <div class="col s3">
+      <a href="http://localhost:8080/commodity/paddy" style="color: #000000">
+        <div class="card grey lighten-4">
+          <div class="card-content row valign-wrapper">
+            <div class="col s3">
+              <img src="https://img.icons8.com/color/48/000000/rice-bowl.png">
+            </div>
+            <div class="col s9">
+              <span class="card-title">paddy</span>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col s3">
+      <a href="http://localhost:8080/commodity/wheat" style="color: #000000">
+        <div class="card grey lighten-4">
+          <div class="card-content row valign-wrapper">
+            <div class="col s3">
+              <img src="https://img.icons8.com/color/48/000000/wheat.png">
+            </div>
+            <div class="col s9">
+              <span class="card-title">Wheat</span>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col s3">
+      <a href="http://localhost:8080/commodity/barley" style="color: #000000">
+        <div class="card grey lighten-4">
+          <div class="card-content row valign-wrapper">
+            <div class="col s3">
+              <img src="https://img.icons8.com/color/48/000000/barley.png">
+            </div>
+            <div class="col s9">
+              <span class="card-title">Barley</span>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col s3">
+      <a href="http://localhost:8080/commodity/soyabean" style="color: #000000">
+        <div class="card grey lighten-4">
+          <div class="card-content row valign-wrapper">
+            <div class="col s3">
+              <img src="https://img.icons8.com/color/48/000000/soy.png">
+            </div>
+            <div class="col s9">
+              <span class="card-title">Soya Bean</span>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s3">
+      <a href="http://localhost:8080/commodity/cotton" style="color: #000000">
+        <div class="card grey lighten-4">
+          <div class="card-content row valign-wrapper">
+            <div class="col s3">
+              <img src="https://img.icons8.com/color/48/000000/cotton.png">
+            </div>
+            <div class="col s9">
+              <span class="card-title">Cotton</span>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col s3">
+      <a href="http://localhost:8080/commodity/copra" style="color: #000000">
+        <div class="card grey lighten-4">
+          <div class="card-content row valign-wrapper">
+            <div class="col s3">
+              <img src="https://img.icons8.com/color/48/000000/coconut.png">
+            </div>
+            <div class="col s9">
+              <span class="card-title">Coconut</span>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col s3">
+      <a href="http://localhost:8080/commodity/groundnut" style="color: #000000">
+        <div class="card grey lighten-4">
+          <div class="card-content row valign-wrapper">
+            <div class="col s3">
+              <img src="https://img.icons8.com/color/48/000000/peanuts.png">
+            </div>
+            <div class="col s9">
+              <span class="card-title">Ground Nut Seeds</span>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col s3">
+      <a href="http://localhost:8080/commodity/rape" style="color: #000000">
+        <div class="card grey lighten-4">
+          <div class="card-content row valign-wrapper">
+            <div class="col s3">
+              <img src="https://image.flaticon.com/icons/svg/188/188317.svg">
+            </div>
+            <div class="col s9">
+              <span class="card-title">Mustard Seed</span>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col s3">
+    <a href="http://localhost:8080/commodity/niger" style="color: #000000">
+      <div class="card grey lighten-4">
+        <div class="card-content row valign-wrapper">
+          <div class="col s3">
+            <img src="https://img.icons8.com/color/48/000000/paper-bag-with-seeds.png">
+          </div>
+          <div class="col s9">
+            <span class="card-title">Niger seed</span>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function () {
+    $('.slider').slider({ full_width: true });
+  });
+</script>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</html>

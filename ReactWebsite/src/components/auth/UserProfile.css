@@ -1,0 +1,25 @@
+.user-profile {
+  display: inline-block;
+  position: relative;
+}
+
+.profile-image {
+  width: 30px; /* Adjust the size of the profile image */
+  height: 30px;
+  cursor: pointer;
+}
+
+.profile-info {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 1;
+}
+
+.user-profile:hover .profile-info {
+  display: block;
+}

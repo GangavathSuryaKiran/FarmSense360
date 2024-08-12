@@ -1,0 +1,29 @@
+{
+  "name": "farmsense360",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install-backend": "cd NodeBackend && npm install",
+    "install-frontend": "cd ReactWebsite && npm install",
+    "install-concurrently": "npm install -g concurrently",
+    "install-dep": "npm run install-backend && npm run install-frontend",
+    "install-all": "npm run install-dep && npm run install-concurrently",
+    "backend": "cd NodeBackend && nodemon app.js",
+    "frontend": "cd ReactWebsite && npm start ",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+  },
+  "author": "Aman Dwivedi",
+  "license": "MIT",
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.7",
+    "axios": "^1.6.0",
+    "concurrently": "^5.3.0",
+    "redux": "^4.2.1",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.3"
+  }
+}

@@ -1,0 +1,31 @@
+<mxfile host="app.diagrams.net" modified="2024-02-12T16:21:25.925Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="MMj32coccmOFOhNs8MUZ" version="23.1.2" type="device">
+  <diagram name="Page-1" id="TgUFxPhiuZtDNOS-IQHP">
+    <mxGraphModel dx="1434" dy="739" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5WDVyyXDCKQnAzQ_wZ9a-1" value="Highlights of Union Budget 2023-24 in Agriculture sector" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="50" y="370" width="180" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="5WDVyyXDCKQnAzQ_wZ9a-2" value="The fund will be set up to encourage agri-startups by young entrepreneures in rural areas&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="470" y="230" width="360" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5WDVyyXDCKQnAzQ_wZ9a-3" value="&lt;p style=&quot;line-height: normal; margin-top: 0pt; margin-bottom: 0pt; margin-right: 0in; direction: ltr; unicode-bidi: embed;&quot;&gt;The agriculture credit target will be increased to Rs 20 lakh crore with a focus on animal husbandry, dairy,&amp;nbsp; fisheries.&lt;/p&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="470" y="330" width="360" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="5WDVyyXDCKQnAzQ_wZ9a-4" value="&lt;p style=&quot;line-height: normal; margin-top: 0pt; margin-bottom: 0pt; margin-right: 0in; direction: ltr; unicode-bidi: embed;&quot;&gt;&lt;/p&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Horticulture Clean Plant Program, with an outlay of&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Rs 2,200 crore, is&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;also announced.&lt;/span&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="470" y="460" width="360" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="r6swBZMkAmhMsb1lHPrc-1" value="&lt;p style=&quot;line-height: normal; margin-top: 0pt; margin-bottom: 0pt; margin-right: 0in; direction: ltr; unicode-bidi: embed;&quot;&gt;A Rs.2,516 crore investment was made to start 63,000 Primary&lt;br/&gt;Agricultural Credit Societies (PACS).&lt;/p&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="570" width="360" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="r6swBZMkAmhMsb1lHPrc-2" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="250" y="449.5" as="sourcePoint" />
+            <mxPoint x="450" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

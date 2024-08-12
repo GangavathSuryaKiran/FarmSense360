@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+ 
+ body {
+      background-image: url('bgt.jpeg');
+      background-size: cover;
+      opacity: 5.5;
+      background-color: #3B5A5F;
+      place-items: center;
+     font-family: serif;
+      color: white;
+ }
+ 
+ .header-1{
+     font-family: 'Playfair Display', serif;
+        
+          color: rgb(255, 255, 255);
+     
+          text-shadow: 2px 2px 5px rgb(3, 17, 6);
+          font-weight: bold;
+               
+          
+          
+ }
+ .f1 {
+      color: white;
+      font-size: 35px;
+ }
+
+ .navbar {
+      background-color: #0A1E29;
+      height: 65px;
+      width: 100%;
+      color: white;
+
+
+ }
+
+ .container-fluid {
+      width: 100%;
+      height: auto;
+      background-color: rgb(255, 255, 255);
+      color: white;
+
+ }
+
+ .nav-link {
+      font-size: 25px;
+      margin-right: 15px;
+      color: #ffffff;
+
+
+ }
+  .ss1 {
+       color: blue !important;
+  }
+
+ #wt {
+      color: white;
+ }
+
+ #sp1 {
+      background-color: inherit;
+
+
+
+
+ }
+
+ #sp2 {
+      font-size: 20px
+ }
+
+ #sp3 {
+      margin-left: 25px;
+ }
+
+ .navbar-brand {
+      font-size: 15px;
+ }
+
+
+ .form-control {
+      width: auto;
+
+
+
+ }
+
+ .d-flex {
+      position: absolute;
+      left: 1100px;
+
+      background-color: #0A1E29;
+ }
+
+
+ .button {
+      border-radius: 7px;
+      background-color: rgb(12, 188, 12);
+      color: #390707;
+      float: right;
+      font-size: 29px;
+      width: 200px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin-top: 2%;
+      margin-right: 2%;
+ }
+
+ .button span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+ }
+
+ .button span:after {
+      content: \00bb;
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+ }
+
+ .button:hover span {
+      padding-right: 25px;
+ }
+
+ .button:hover span:after {
+      opacity: 1;
+      right: 0;
+ }
+
+ button:hover {
+      background-color: #70ee50;
+ }
+
+ .Tstamp {
+      font-size: 22px;
+
+      margin-top: 42%;
+      position: fixed;
+      color: aliceblue;
+      text-shadow: 2px 2px 8px black;
+      font-family: 'Courier New', Courier, monospace;
+ }
+
+
+ .wrapper {
+      overflow: hidden;
+      max-width: 390px;
+      background: rgba(255, 255, 255, 0.6);
+      color: rgb(7, 7, 7);
+      border-radius: 10px;
+      outline-style: groove;
+      outline-color: rgb(89, 88, 88);
+
+
+      box-shadow: 0px 15px 20px rgba(6, 16, 105, 0.1);
+ }
+
+ .wrapper .title-text {
+      display: flex;
+      width: 200%;
+ }
+
+ .wrapper .title {
+      width: 50%;
+      font-size: 35px;
+      font-weight: 600;
+      text-align: center;
+      transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+ }
+
+ .wrapper .slide-controls {
+      position: relative;
+      display: flex;
+      height: 50px;
+      width: 100%;
+      overflow: hidden;
+      margin: 30px 0 10px 0;
+      justify-content: space-between;
+      border: 1px solid rgb(0, 0, 0);
+      border-radius: 5px;
+ }
+
+ .slide-controls .slide {
+      height: 100%;
+      width: 100%;
+      color: rgb(251, 251, 251);
+      font-size: 18px;
+      font-weight: 500;
+      text-align: center;
+      line-height: 48px;
+      cursor: pointer;
+      z-index: 1;
+      transition: all 0.6s ease;
+ }
+
+ .slide-controls label.signup {
+      color: #000;
+ }
+
+ .slide-controls .slider-tab {
+      position: absolute;
+      height: 100%;
+      width: 50%;
+      left: 0;
+      z-index: 0;
+      border-radius: 5px;
+      background: -webkit-linear-gradient(left, #7fb793,#004a2f);
+      transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+ }
+
+ input[type="radio"] {
+      display: none;
+ }
+
+ #signup:checked~.slider-tab {
+      left: 50%;
+ }
+
+ #signup:checked~label.signup {
+      color: #fff;
+      cursor: default;
+      user-select: none;
+ }
+
+ #signup:checked~label.login {
+      color: #000;
+ }
+
+ #login:checked~label.signup {
+      color: #000;
+ }
+
+ #login:checked~label.login {
+      cursor: default;
+      user-select: none;
+ }
+
+ .wrapper .form-container {
+      width: 100%;
+      overflow: hidden;
+ }
+
+ .form-container .form-inner {
+      display: flex;
+      width: 200%;
+ }
+
+ .form-container .form-inner form {
+      width: 50%;
+      transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+ }
+
+ .form-inner form .field {
+      height: 50px;
+      width: 100%;
+      margin-top: 20px;
+ }
+
+ .form-inner form .field input {
+      height: 100%;
+      width: 100%;
+      outline: none;
+      padding-left: 15px;
+      border-radius: 5px;
+      border: 1px solid rgb(93, 92, 92);
+      border-bottom-width: 2px;
+      font-size: 17px;
+      transition: all 0.3s ease;
+ }
+
+ .form-inner form .field input:focus {
+      border-color: #79ce5a;
+      box-shadow: inset 0 0 3px #e4e7e4;
+ }
+
+ .form-inner form .field input::placeholder {
+      color: rgb(103, 102, 102);
+      transition: all 0.3s ease;
+ }
+
+ form .field input:focus::placeholder {
+      color: #b3b3b3;
+ }
+
+ .form-inner form .pass-link {
+      margin-top: 5px;
+ }
+
+ .form-inner form .signup-link {
+      text-align: center;
+      margin-top: 30px;
+ }
+
+ .form-inner form .pass-link a,
+ .form-inner form .signup-link a {
+      color: #9EB384;
+      text-decoration: none;
+ }
+
+ .form-inner form .pass-link a:hover,
+ .form-inner form .signup-link a:hover {
+      text-decoration: underline;
+ }
+
+ form .btn {
+      height: 50px;
+      width: 100%;
+      border-radius: 5px;
+      position: relative;
+      overflow: hidden;
+ }
+
+ form .btn .btn-layer {
+      height: 100%;
+      width: 300%;
+      position: absolute;
+      left: -100%;
+      background: -webkit-linear-gradient(right, #7fb793, #004a2f, #7fb793, #004a2f);
+      border-radius: 5px;
+      transition: all 0.4s ease;
+      ;
+ }
+
+ form .btn:hover .btn-layer {
+      left: 0;
+ }
+
+ form .btn input[type="submit"] {
+      height: 100%;
+      width: 100%;
+      z-index: 1;
+      position: relative;
+
+      background: none;
+      border: none;
+      color: #fff;
+      padding-left: 0;
+      border-radius: 5px;
+      font-size: 20px;
+      font-weight: 500;
+      cursor: pointer;
+ }
+
+ #lg {
+      margin-top: auto;
+      padding: auto;
+ }
